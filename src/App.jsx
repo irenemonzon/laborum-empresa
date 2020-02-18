@@ -12,13 +12,13 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        { !user && <LoginScreen /> }
-        { user && <Home /> }
+        {!user && <LoginScreen />}
+        {user && <Home />}
         <Switch>
           <Route exact path="/crear-aviso" component={AddjobForm} />
         </Switch>
       </BrowserRouter>
-      
+
     </div>
   );
 }
