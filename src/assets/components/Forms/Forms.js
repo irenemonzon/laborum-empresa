@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import db from '../../../firebase-config';
 
 const Form = () => {
   const [title, setTitle] = useState('');
@@ -25,7 +25,7 @@ const Form = () => {
   }
 
   return (
-    
+
     <form onSubmit={onSubmit}>
       <h4>Informacion basica</h4>
       <div>
@@ -36,7 +36,7 @@ const Form = () => {
         <label>Razon social</label>
         <input type="text" value={date} onChange={(e) => setDate(e.currentTarget.value)} />
       </div>
-      <div> 
+      <div>
         <label>Direccion</label>
         <input type="text" value={address} onChange={(e) => setAddress(e.currentTarget.value)} />
       </div>
@@ -50,4 +50,4 @@ const Form = () => {
   );
 };
 
- export default Form;
+export default Form;

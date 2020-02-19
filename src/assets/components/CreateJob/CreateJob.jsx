@@ -20,7 +20,7 @@ const AddjobForm = () => {
 
   function addJob(e) {
     e.preventDefault();
-    db.collection('jobs')
+    db.collection('newJobAnnouncement')
       .add({
         title,
         date,
