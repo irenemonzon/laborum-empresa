@@ -68,7 +68,7 @@ const BasicInfo = () => {
       <hr className="separator" />
       <section className="btn-section">
         <button className="btn-back">Atrás</button>
-        <Link to="/ApplicantJob">Siguiente</Link>
+        <Link to="/ApplicantJob" className="btn-next ">Siguiente</Link>
       </section>
     </div>
   );

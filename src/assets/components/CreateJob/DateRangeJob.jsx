@@ -31,10 +31,6 @@ const DateRangeJob = () => {
     })
       .then((docRef) => {
         console.log('Document written with ID: ', docRef.id);
-        // dispatch({
-        //   type: 'ADD_WORKEXPERIENCE',
-        //   payload: docRef.id,
-        // });
       })
       .catch((error) => {
         console.error('Error adding document: ', error);
@@ -62,9 +58,9 @@ const DateRangeJob = () => {
         name="endDate"
         onChange={onChange}
       />
-      <Link to="/ApplicantJob">Atras</Link>
+      <Link to="/ApplicantJob" className>Atras</Link>
       <button onClick={sendFirebase}>Guardar</button>
-      <Link to="/">Agregar Nuevo aviso</Link>
+      <Link to="/">Nuevo aviso</Link>
 
     </div>
 
