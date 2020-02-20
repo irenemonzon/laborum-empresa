@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useMyContext } from '../../states/provider';
 import './CreateJob.css';
+
 
 const BasicInfo = () => {
   const [myState, dispatch] = useMyContext();
@@ -66,7 +68,7 @@ const BasicInfo = () => {
       <hr className="separator" />
       <section className="btn-section">
         <button className="btn-back">Atrás</button>
-        <button className="btn-next">Siguiente</button>
+        <Link to="/ApplicantJob">Siguiente</Link>
       </section>
     </div>
   );

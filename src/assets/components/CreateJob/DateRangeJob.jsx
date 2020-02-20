@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import db from '../../../firebase-config';
 import { useMyContext } from '../../states/provider';
 
@@ -61,7 +62,10 @@ const DateRangeJob = () => {
         name="endDate"
         onChange={onChange}
       />
+      <Link to="/ApplicantJob">Atras</Link>
       <button onClick={sendFirebase}>Guardar</button>
+      <Link to="/">Agregar Nuevo aviso</Link>
+
     </div>
 
   );

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useMyContext } from '../../states/provider';
 
 const ApplicantJob = () => {
@@ -54,7 +55,8 @@ const ApplicantJob = () => {
         name="typeAnswer"
         onChange={onChange}
       />
-      <button>Guardar</button>
+      <Link to="/" className="btn-back">Atrás</Link>
+      <Link to="/DateRangeJob">Siguiente</Link>
     </div>
 
   );
